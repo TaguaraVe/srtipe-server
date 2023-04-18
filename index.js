@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3500;
 app.use(express.json());
 app.use(cors());
 
-app.post('/checkout', async (req, res) => {
+app.post('/api/checkout', async (req, res) => {
   // you can get more data to find in a database, and so on
   const { id, email, name, description, amount } = req.body;
   // console.log(req.body);
